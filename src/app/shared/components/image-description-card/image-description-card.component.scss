@@ -1,0 +1,38 @@
+$circle-radius: 200px;
+
+.circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#circles-container {
+  position: relative;
+}
+
+#small {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  width: $circle-radius * 0.8;
+  height: $circle-radius * 0.8;
+  background: darkgrey;
+}
+
+#big {
+  z-index: 10;
+  position: absolute;
+  top: 20px;
+  width: $circle-radius;
+  height: $circle-radius;
+  background: #404040;
+}
+
+.card {
+  margin-left: $circle-radius/2;
+  padding-left: $circle-radius/2;
+  max-width: 500px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px grey;
+  min-height: $circle-radius + 20px;
+}

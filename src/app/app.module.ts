@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { CerealsModule } from './cereals/cereals.module';
 import { SnacksModule } from './snacks/snacks.module';
 import { LayoutModule } from './layout/layout.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -18,6 +19,7 @@ import { LayoutModule } from './layout/layout.module';
     LayoutModule,
     CerealsModule,
     SnacksModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

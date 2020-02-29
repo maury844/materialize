@@ -1,0 +1,15 @@
+.contain {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-item {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.display-item:nth-of-type(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2rem;
+}
