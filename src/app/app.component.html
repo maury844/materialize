@@ -1,16 +1,16 @@
 <mat-toolbar>
-  <span>Natuser</span>
+  <span class="clickable" [routerLink]="['/home']">Natuser</span>
 
   <div class="right">
-    <span class="right-menu-item" [routerLink]="['/about']">{{
-      'Sobre Nosotros' | uppercase
-    }}</span>
-    <span class="right-menu-item" [routerLink]="['/cereals']">{{
-      'Cereales' | uppercase
-    }}</span>
-    <span class="right-menu-item" [routerLink]="['/snacks']">{{
-      'Snacks' | uppercase
-    }}</span>
+    <div class="right-menu-item" [routerLink]="['/about']">
+      {{ 'Sobre Nosotros' | uppercase }}
+    </div>
+    <div class="right-menu-item" [routerLink]="['/cereals']">
+      {{ 'Cereales' | uppercase }}
+    </div>
+    <div class="right-menu-item" [routerLink]="['/snacks']">
+      {{ 'Snacks' | uppercase }}
+    </div>
   </div>
 </mat-toolbar>
 <router-outlet></router-outlet>

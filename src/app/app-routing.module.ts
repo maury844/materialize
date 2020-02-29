@@ -8,6 +8,11 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'cereals',
+    loadChildren: () =>
+      import('./cereals/cereals.module').then(mod => mod.CerealsModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
