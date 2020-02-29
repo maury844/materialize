@@ -13,6 +13,11 @@ const routes: Routes = [
       import('./cereals/cereals.module').then(mod => mod.CerealsModule),
   },
   {
+    path: 'snacks',
+    loadChildren: () =>
+      import('./snacks/snacks.module').then(mod => mod.SnacksModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
