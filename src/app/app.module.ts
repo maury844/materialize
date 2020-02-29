@@ -4,9 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { HomeComponent } from './home/home.component';
 import { CerealsModule } from './cereals/cereals.module';
+import { SnacksModule } from './snacks/snacks.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -14,8 +15,9 @@ import { CerealsModule } from './cereals/cereals.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
+    LayoutModule,
     CerealsModule,
+    SnacksModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,16 +1,2 @@
-<mat-toolbar>
-  <span class="clickable" [routerLink]="['/home']">Natuser</span>
-
-  <div class="right">
-    <div class="right-menu-item" [routerLink]="['/about']">
-      {{ 'Sobre Nosotros' | uppercase }}
-    </div>
-    <div class="right-menu-item" [routerLink]="['/cereals']">
-      {{ 'Cereales' | uppercase }}
-    </div>
-    <div class="right-menu-item" [routerLink]="['/snacks']">
-      {{ 'Snacks' | uppercase }}
-    </div>
-  </div>
-</mat-toolbar>
+<app-navbar></app-navbar>
 <router-outlet></router-outlet>
