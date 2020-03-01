@@ -1,5 +1,7 @@
 @import 'src/styles.scss';
 $circle-radius: 200px;
+$medium-circle-radius: 150px;
+$small-circle-radius: 80px;
 
 .circle {
   -webkit-border-radius: 50%;
@@ -34,7 +36,44 @@ $circle-radius: 200px;
   margin-left: $circle-radius/2;
   padding-left: $circle-radius/2 + 10px;
   max-width: 600px;
-  border-radius: 10%;
+  border-radius: 50px;
   box-shadow: 5px 5px 15px grey;
   min-height: $circle-radius + 20px;
+}
+
+
+@media only screen and (max-width: 860px) {
+  #small {
+    width: $medium-circle-radius * 0.8;
+    height: $medium-circle-radius * 0.8;
+  }
+
+  #big {
+    width: $medium-circle-radius;
+    height: $medium-circle-radius;
+  }
+  
+  .card {
+    margin-left: $medium-circle-radius/2;
+    padding-left: $medium-circle-radius/2 + 10px;
+    min-height: $medium-circle-radius + 20px;
+  }  
+}
+
+@media only screen and (max-width: 520px) {
+  #small {
+    width: $small-circle-radius * 0.8;
+    height: $small-circle-radius * 0.8;
+  }
+
+  #big {
+    width: $small-circle-radius;
+    height: $small-circle-radius;
+  }
+  
+  .card {
+    margin-left: $small-circle-radius/2;
+    padding-left: $small-circle-radius/2 + 10px;
+    min-height: $small-circle-radius + 20px;
+  }  
 }
