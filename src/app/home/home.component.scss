@@ -3,18 +3,31 @@
 .contain {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 24px;
   background-color: $background-color;
 }
 
 .display-item {
   display: flex;
-  margin-left: 4rem;
 }
 
 .display-item:nth-of-type(2n) {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 4rem;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 860px) {
+  .display-item:nth-of-type(2n) {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .display-item {
+    display: flex;
+    justify-content: center;
+  }
+  
 }
