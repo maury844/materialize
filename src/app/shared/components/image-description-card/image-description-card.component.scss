@@ -1,3 +1,4 @@
+@import 'src/styles.scss';
 $circle-radius: 200px;
 
 .circle {
@@ -11,12 +12,12 @@ $circle-radius: 200px;
 }
 
 #small {
-  z-index: 9;
+  z-index: 7;
   position: absolute;
   top: 50%;
   width: $circle-radius * 0.8;
   height: $circle-radius * 0.8;
-  background: darkgrey;
+  background: $tertiary-color;
 }
 
 #big {
@@ -26,7 +27,7 @@ $circle-radius: 200px;
   left: 10px;
   width: $circle-radius;
   height: $circle-radius;
-  background: #404040;
+  background: $secondary-color;
 }
 
 .card {

@@ -1,8 +1,11 @@
+@import 'src/styles.scss';
+
 .contain {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-  background-color: #cdcdcd;
+  padding-bottom: 2rem;
+  background-color: $background-color;
 }
 
 .display-item {
