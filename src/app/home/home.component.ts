@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Algo',
       text:
-        'Algo cortito nomas aqui xdxd  Lorem Ipsum is simply dummy text of Lorem Ipsum is simply dummy text of',
+        'Algo corto aqui Lorem Ipsum is simply dummy text of Lorem Ipsum is simply dummy text of',
     },
   ];
 
