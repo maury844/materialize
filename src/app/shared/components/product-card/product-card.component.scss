@@ -1,0 +1,25 @@
+.product-grid {
+    display: flex;
+    flex-flow: row;
+}
+
+.product-image {
+    flex-grow: 1;
+}
+
+.product-content {
+    padding: 16px;
+    flex-grow: 1;
+
+    .product-title {
+    }
+    
+    .product-description {
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .product-grid {
+        flex-flow: column;
+    }
+}
