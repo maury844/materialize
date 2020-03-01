@@ -8,14 +8,9 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'cereals',
+    path: 'products',
     loadChildren: () =>
-      import('./cereals/cereals.module').then(mod => mod.CerealsModule),
-  },
-  {
-    path: 'snacks',
-    loadChildren: () =>
-      import('./snacks/snacks.module').then(mod => mod.SnacksModule),
+      import('./products/products.module').then(mod => mod.ProductsModule),
   },
   {
     path: '**',
